@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer With Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header (copied from index.html) -->
+  <header>
+    <div class="nav-container">
+     <div class="logo">
+  <a href="index.html">
+    <img src="logo.jpg" alt="Logo" id="mainLogo" class="logo-stage-3">
+  </a>
+</div>
+
+      <nav class="header-nav" id="headerNav">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+        <!--  <li><a href="index.html#about">About Us</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Get Involved</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#volunteer">Volunteer</a></li>
+              <li><a href="index.html#events">Events</a></li>
+              <li><a href="index.html#donate" id="donateLink">Donate</a></li>
+            </ul>
+          </li>
+        <!--  <li><a href="index.html#projects">Projects</a></li> -->
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Volunteer Page Hero Video -->
+  <section class="videos-section">
+    <div class="videos-left">
+      <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ?mute=1"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="videos-right">
+      <h2>Why Volunteer?</h2>
+      <p>Join our team and contribute to real change in local communities. 
+         Volunteering helps you gain experience, build networks, and make an impact.</p>
+    </div>
+  </section>
+
+  <!-- Volunteer Form -->
+ <!-- Volunteer Form Section -->
+<section class="volunteer-form-section">
+  <div class="volunteer-form-container">
+    <h2>Volunteer With Us</h2>
+    <p class="form-subtitle">Fill out the form below and join our mission.</p>
+<form id="volunteerForm">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="fullName">Full Name *</label>
+      <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age *</label>
+      <input type="number" id="age" name="age" min="16" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="skills">Skills / Interests *</label>
+    <input type="text" id="skills" name="skills" required>
+  </div>
+    <div class="form-group">
+      <label for="duration">Duration (in months) *</label>
+      <input type="number" id="duration" name="duration" min="1" required>
+    </div>
+    <div class="form-row">
+    <div class="form-group">
+      <label for="institute">Name of the Institute (Optional)</label>
+      <input type="text" id="institute" name="institute">
+    </div>
+    <div class="form-group">
+      <label for="designation">Designation (Optional)</label>
+      <input type="text" id="designation" name="designation">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="reason">Why do you want to volunteer? *</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="btn-send">Submit Application</button>
+</form>
+  </div>
+</section>
+</body>
+</html>
